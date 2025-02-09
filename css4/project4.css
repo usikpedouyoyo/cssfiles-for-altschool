@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(215, 237, 243, 0.863)
+}
+img{
+    width:40px;
+    margin-bottom: 10px;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding:50px;
+    width: 1440px;
+    height: 870px;
+}
+.content{
+    max-width: 460px;
+    max-height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icon{
+    width:77.33px;
+    margin: 80px;
+}
+.content h2{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    }
+.content p{
+    color:#000b0a;
+    font-size: 16px;
+    line-height: 25px;
+    }
+.form-container{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 580px;
+    height:679px;
+}
+.input-group{
+    display: flex;
+    gap: 10px;
+}
+.group1{
+    width: 50%;
+}
+form input, form select, form button{
+    width:100%;
+    padding:10px;
+    margin:15px 0;
+    border:1px solid #ccc;
+    border-radius: 5px;
+
+}
+form button{
+    background-color: #2ec4b6;
+    color:white;
+}
+form button:hover{
+    background-color: #218838;
+}
+.terms{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+a:link {
+    text-decoration: underline;
+    color:#2ec4b6;
+}
+label{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*the mobile view*/
+@media (max-width: 768px){
+    body{
+        background-color: #f7fdfc;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .container{
+        flex-direction:column;
+        padding:20px;
+        width:100%;
+        margin: auto;
+    }
+    .content{
+        position: relative;
+        left:45px;
+        font-size: 16px;
+        }
+    img{
+        width:38.67px;
+        height:40px;
+    }
+    .form-container{
+        width:80%;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .group1{
+        width:100%;
+    }
+}

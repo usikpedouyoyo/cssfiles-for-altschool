@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: f5f8fa;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        /*checkoutsection*/
+        .logo img{
+            width:200px;
+            height:39px;
+            background-size: cover;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+           }
+        .account-btn{
+            background-color: white;
+            border: 1px solid black;
+            margin: -4px;
+            padding:6px;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            } 
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap:20px;
+        }
+        nav ul a{
+            text-decoration: none;
+        }
+        h2 {
+    margin-bottom: 30px;
+    
+}
+.checkout-container{
+            display: flex;
+            margin:50px auto;
+            justify-content: center;
+            width:892px;
+            height:845px;
+            border-radius:8px;
+        }
+        .checkout-box{
+            background-color: white;
+            padding:20px;
+            width:580px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .checkout-header{
+            height:80px;
+            padding:5px 0 10px 20px;
+            font-weight: lighter;
+            font-size:24px;
+        }
+        .input-group{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+
+        }
+        .input-field {
+            display: flex;
+             flex-direction: column;
+             margin-bottom: 15px;
+             width: 100%;
+       }
+       label {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+      }
+    input {
+    padding: 10px;
+    border: 1px solid #a5a0a0;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #dbd5d5;
+}
+#email-container{
+    width: 370px;
+    height:60px;
+}
+.circle{
+    background: rgba(255, 255, 255, 0.842);
+    color: #007b8f;
+    border-radius: 50%;
+    border: 1px solid #007b8f;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+        .first-section{
+            height:221px;
+        }
+        .second-section{
+            height: 154px;
+
+        }
+
+.card-input {
+    display: flex;
+    gap: 0px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.card-input input{
+border:1px none #ccc;
+background-color: #eaeaea;
+outline: none;  
+padding: 10px 5px;  
+    }
+    .btn {
+    width: 100%;
+    background: #098fa3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005f6b;
+}    
+/*side panel */
+        .pricing-box{
+            width:312px;
+            background-color: #007b8f;
+            color:white;
+            padding:30px;
+        }
+        .price-box{
+            height: 152px;
+            width: 261px;
+            margin-top: 42px;
+            margin-bottom: 30px;
+            line-height: 20px;
+        }
+        .price{
+            font-size: 35px;
+            font-weight: lighter;
+        }
+        sub,sup{
+            font-size: 14px;
+        }
+        .pricing-box ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding:0;
+            width:170px;
+            height:96px;
+            margin-bottom: 30px;
+        }
+        .checkedcircle{
+            height:10px;
+            width:10px;
+        }
+        .bottom-items{
+            margin: auto;
+            text-align: center;
+            width:483px;
+            height: 146.1px;
+        }
+        .bottom-items a{
+            text-decoration: underline;
+            color: slategray;
+        }
+        .companymark{
+            color: white;
+            background-color: #b6b1b1;
+            border-radius: 4px;
+            padding:5px;
+            width:150px;
+            margin: auto;
+        }
+        .boldtext{
+            font-size: 1.5em;
+        }
+        .importantlink a{
+            color:#fff;
+            }
+            .testimonial{
+                font-style: italic;
+            }
+       .help-text a{
+    text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo"><img src="wp pusher.png" alt=""></div>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><button class="account-btn">Account</button></li>
+            </ul>
+        </nav>
+    
+        <!-- Checkout Section -->
+        <div class="checkout-container">
+            <div class="checkout-box">
+                <h2 class="checkout-header">Checkout</h2>
+    
+                <!-- Basic Information -->
+                <div class="section first-section">
+                    <h3><span class="circle">1</span> Your Basic Information</h3>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Jane">
+                        </div>
+                        <div class="input-field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="input-field" id="email-container">
+                        <label for="email">E-mail</label>
+                        <input type="email"  id="email" placeholder="janedoe@example.com">
+                    </div>
+                </div>
+    
+                <!-- Payment Information -->
+                <div class="section second-section">
+                    <h3><span class="circle">2</span> Your Payment Information</h3>
+                    <div class="input-field">
+                        <label for="card-number">Credit Card</label>
+                        <div class="card-input">
+                            <input type="text" id="card-number" placeholder="Card Number">
+                            <input type="text" id="expiry" placeholder="MM / YY">
+                            <input type="text" id="cvc" placeholder="CVC">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Buy Button -->
+                 <div class="bottom-items">
+                <button type="submit" class="btn">Buy WP Pusher</button>
+    
+                <!-- Help Section -->
+                <p>Need any help <span class="circle">?</span> <a href="#">Don't hesitate to contact support</a></p>
+                <p class="companymark">powered by <span class="boldtext">stripe</span></p>
+            </div>
+            </div>
+    
+            <!-- Pricing Section -->
+            <div class="pricing-box"> 
+                <div class="price-box">
+                    <h3>Freelancer</h3>
+                    <p class="price"><sup>$</sup>99 <sub>/ year</sub></p>
+                    <p>Automatically renews after 1 year</p>
+                    
+                </div>
+<ul>
+                    <li><img src="checked.png"  class="checkedcircle" alt="list item"> Use on 5 client sites</li>
+                    <li><img src="checked.png"  class="checkedcircle" alt="list item">Private repositories</li>
+                    <li><img src="checked.png" class="checkedcircle" alt="list item"> Email support</li>
+                </ul>
+                <p>Need 20 client sites? </p>
+                <a href="#" class="importantlink">Switch to the Agency plan.</a>
+                <p class="testimonial">
+                "FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!"
+                </p>
+                <p class="reviewer">— Kirk Beard</p>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
